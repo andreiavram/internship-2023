@@ -1,0 +1,201 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "user1",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-07-04T12:02:59.630Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "user2",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-07-04T12:03:02.279Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$ruKnRXEnRsvqqTLqC8yiLX$H1whC4P8nzwzcGy1XOWTsRUXBUVfzJy4MKOZ0gvusiE=",
+        "last_login": "2023-07-04T12:54:28.511Z",
+        "is_superuser": true,
+        "username": "yeti",
+        "first_name": "",
+        "last_name": "",
+        "email": "andrei.avram@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-07-04T12:54:23.988Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8lvpwfu3bri4eta3zu76iy62arym3w0s",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWmmHUpbl-49A5mZDoIaSCisjHdXEha6_e-9_zIdbevQbVWXbizmbNCcfjcmeei0g3Kn6TZbmad1Gdnuij1otde56PNyuH8HA9XhWzcMPfqsEFUQcpKWRRskdiWUABpdyoAKyceYUVzTModeCXNAnwjM-wPdQjdt:1qGfY4:4p2oet6-N6zXY_ucXA7Rcfu0OAyuslll8MFPqW7xiLA",
+        "expire_date": "2023-07-18T12:54:28.515Z"
+    }
+},
+{
+    "model": "todo.taskitem",
+    "pk": 1,
+    "fields": {
+        "title": "task 1",
+        "description": "2023-07-04 12:09:48.342042",
+        "date_created": "2023-07-04T12:09:48.342Z",
+        "date_due": "2023-07-04T15:09:48.342Z",
+        "owner": [
+            "user1"
+        ],
+        "parent_task": null
+    }
+},
+{
+    "model": "todo.taskitem",
+    "pk": 2,
+    "fields": {
+        "title": "task 2",
+        "description": "2023-07-04 12:09:48.362087",
+        "date_created": "2023-07-04T12:09:48.362Z",
+        "date_due": "2023-07-04T15:09:48.362Z",
+        "owner": [
+            "user1"
+        ],
+        "parent_task": null
+    }
+},
+{
+    "model": "todo.taskitem",
+    "pk": 3,
+    "fields": {
+        "title": "task 3",
+        "description": "2023-07-04 12:09:48.366041",
+        "date_created": "2023-07-04T12:09:48.366Z",
+        "date_due": "2023-07-04T15:09:48.366Z",
+        "owner": [
+            "user1"
+        ],
+        "parent_task": null
+    }
+},
+{
+    "model": "todo.taskitem",
+    "pk": 4,
+    "fields": {
+        "title": "Altceva",
+        "description": "2023-07-04 12:09:48.369040",
+        "date_created": "2023-07-04T12:09:48.369Z",
+        "date_due": "2023-07-04T15:09:48.369Z",
+        "owner": [
+            "user1"
+        ],
+        "parent_task": null
+    }
+},
+{
+    "model": "todo.taskitem",
+    "pk": 5,
+    "fields": {
+        "title": "task 5",
+        "description": "2023-07-04 12:09:48.372241",
+        "date_created": "2023-07-04T12:09:48.372Z",
+        "date_due": "2023-07-04T15:09:48.372Z",
+        "owner": [
+            "user1"
+        ],
+        "parent_task": null
+    }
+},
+{
+    "model": "todo.taskitem",
+    "pk": 6,
+    "fields": {
+        "title": "task 6",
+        "description": "2023-07-04 12:09:48.376246",
+        "date_created": "2023-07-04T12:09:48.376Z",
+        "date_due": "2023-07-04T15:09:48.375Z",
+        "owner": [
+            "user1"
+        ],
+        "parent_task": null
+    }
+},
+{
+    "model": "todo.taskitem",
+    "pk": 7,
+    "fields": {
+        "title": "task 7",
+        "description": "2023-07-04 12:09:48.379244",
+        "date_created": "2023-07-04T12:09:48.379Z",
+        "date_due": "2023-07-04T15:09:48.379Z",
+        "owner": [
+            "user1"
+        ],
+        "parent_task": null
+    }
+},
+{
+    "model": "todo.taskitem",
+    "pk": 8,
+    "fields": {
+        "title": "task 8",
+        "description": "2023-07-04 12:09:48.383245",
+        "date_created": "2023-07-04T12:09:48.383Z",
+        "date_due": "2023-07-04T15:09:48.383Z",
+        "owner": [
+            "user2"
+        ],
+        "parent_task": null
+    }
+},
+{
+    "model": "todo.taskitem",
+    "pk": 9,
+    "fields": {
+        "title": "task 9",
+        "description": "2023-07-04 12:09:48.386244",
+        "date_created": "2023-07-04T12:09:48.386Z",
+        "date_due": "2023-07-04T15:09:48.386Z",
+        "owner": [
+            "user2"
+        ],
+        "parent_task": null
+    }
+},
+{
+    "model": "todo.taskitem",
+    "pk": 10,
+    "fields": {
+        "title": "task 10",
+        "description": "2023-07-04 12:09:48.390245",
+        "date_created": "2023-07-04T12:09:48.390Z",
+        "date_due": "2023-07-04T15:09:48.389Z",
+        "owner": [
+            "user2"
+        ],
+        "parent_task": 1
+    }
+}
+]

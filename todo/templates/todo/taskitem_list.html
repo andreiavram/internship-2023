@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <table>
+    {% for task in object_list %}
+    <tr>
+        <td><a href = "{% url 'task_detail' pk=task.pk bla='blalbal' %}">{{ task.title }}</a></td>
+        <td>{{ task.description }}</td>
+        <td>{{ task.due_date|date:"d.m.Y" }}</td>
+        <td>{{ task.owner }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ object.title }}</h1>
+    {{ object.owner }} {{ object.date_due|date:'d.m' }}
+    <br><br>
+    {{ bla }}
+    <a href = "{% url 'task_list' %}">Back to the task list</a>
+{% endblock %}
