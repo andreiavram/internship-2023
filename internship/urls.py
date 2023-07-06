@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path, include
+from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
 from rest_framework.routers import DefaultRouter
 
 from todo.api.views import TaskItemList, TaskItemDetail
@@ -34,5 +35,9 @@ urlpatterns = [
 
     # path('api/tasks/', TaskItemList.as_view(), name="api_task_list"),
     # path('api/tasks/<int:pk>/', TaskItemDetail.as_view(), name="api_task_detail"),
+    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+    # Optional UI:
+    path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+    path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
     path('api/', include(router.urls)),
 ]

@@ -5,7 +5,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from todo.api.filters import TaskFilter, DocumentFilter
-from todo.api.permissions import SuperuserPermission
+from todo.api.permissions import SuperuserPermission, TokenPermission
 from todo.api.serializers import TaskItemSerializer, UserSerializer, DocumentSerializer
 from todo.models import TaskItem, Document
 
@@ -13,7 +13,7 @@ from todo.models import TaskItem, Document
 class TaskItemViewSet(viewsets.ModelViewSet):
     queryset = TaskItem.objects.all()
     serializer_class = TaskItemSerializer
-    permission_classes = [IsAuthenticated, SuperuserPermission]
+    permission_classes = [TokenPermission, ]
     filterset_class = TaskFilter
 
     @action(detail=True, methods=['patch'])
